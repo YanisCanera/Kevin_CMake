@@ -1,4 +1,4 @@
-name: CMakeNinja
+name: Kevin_CMake
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
     - name: Run
       working-directory: ${{github.workspace}}/build/src/${{env.BUILD_TYPE}}
       run: |
-        start /b .\CMakeNinja.exe
+        start /b .\Kevin_CMake.exe
         timeout /t 5
-        taskkill /f /im CMakeNinja.exe
+        taskkill /f /im Kevin_CMake.exe
       shell: cmd 
