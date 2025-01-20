@@ -50,7 +50,4 @@ jobs:
         start /b .\CMakeNinja.exe
         timeout /t 5
         taskkill /f /im CMakeNinja.exe
-      shell: cmd
-      
-    
-      
+      shell: cmd 
